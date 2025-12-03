@@ -1,0 +1,5 @@
+{
+  "banks": ["paypal.com", "chase.com", "bankofamerica.com", "wellsfargo.com", "citibank.com"],
+  "big_brands": ["google.com", "youtube.com", "facebook.com", "instagram.com", "twitter.com", "github.com", "microsoft.com", "apple.com", "amazon.com"],
+  "shopping": ["ebay.com", "aliexpress.com", "alibaba.com", "etsy.com"]
+}

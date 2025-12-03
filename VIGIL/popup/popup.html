@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VIGIL</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">VIGIL</h1>
+    </header>
+
+    <main id="main">
+      <div id="loading" class="center">Loading…</div>
+
+      <div id="summary" class="hidden" role="region" aria-live="polite">
+        <div class="risk-row">
+          <div id="riskLabel" class="risk-label">—</div>
+          <div id="riskScore" class="risk-score">0</div>
+        </div>
+
+        <div class="score-bar" aria-hidden="true">
+          <div id="scoreFill" class="score-fill" style="width:0%"></div>
+        </div>
+
+        <ul id="details" class="details-list" aria-label="Findings"></ul>
+
+        <div class="metrics">
+          <div class="metric"><strong>HTTPS</strong><span id="httpsVal">—</span></div>
+          <div class="metric"><strong>Redirects</strong><span id="redirectVal">—</span></div>
+          <div class="metric"><strong>Scripts</strong><span id="scriptsVal">—</span></div>
+          <div class="metric"><strong>Trackers</strong><span id="trackersVal">—</span></div>
+        </div>
+
+        <div class="actions">
+          <button id="rescanBtn">Scan this page</button>
+          <button id="copyUrlBtn">Copy URL</button>
+          <a id="repoLink" class="link" target="_blank" rel="noopener">VIGIL on GitHub</a>
+        </div>
+
+        <div id="explain" class="explain hidden">
+          <h3 class="small">Why this matters</h3>
+          <p class="muted">VIGIL shows risk factors — not a final verdict. Use these signals to make safer choices online.</p>
+        </div>
+      </div>
+
+      <div id="noData" class="hidden center">
+        <p>No scan data available for this page.</p>
+        <button id="doScanBtn">Scan this page</button>
+      </div>
+
+      <footer class="footer">
+        <small class="muted">Privacy-first — analysis runs locally in your browser.</small>
+      </footer>
+    </main>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
