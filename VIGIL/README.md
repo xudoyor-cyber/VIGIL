@@ -2,7 +2,7 @@
 
 **VIGIL** is a lightweight, privacy-first browser extension designed to help users identify potentially risky websites in real-time. By analyzing URLs, scripts, and domain patterns **locally in the browser**, VIGIL provides clear risk indicators, alerts for look-alike domains, and actionable insights — all without sending any data to external servers.
 
-![VIGIL Screenshot](docs/assets/vigil-screenshot.png)  
+
 
 ---
 
@@ -81,5 +81,6 @@ VIGIL/
 -Suspicious TLDs or IP-only URLs
 -Unicode / punycode checks
 -Browser compatibility expansion (Firefox, Edge)
+
 
 Created by Sirojiddinov Khudoyor — Vigilant about cybersecurity, practical about learning.
